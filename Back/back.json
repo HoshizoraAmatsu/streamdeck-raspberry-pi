@@ -37,21 +37,6 @@
         "wires": []
     },
     {
-        "id": "8a6dc43ab6cdbf77",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\openurl.py",
-        "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
-        "x": 500,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "068bb8c43f61c5eb",
         "type": "http in",
         "z": "d73980d7f32c9e96",
@@ -79,21 +64,6 @@
         "x": 430,
         "y": 380,
         "wires": []
-    },
-    {
-        "id": "e07ce09a7405f829",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\textinput.py",
-        "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
-        "x": 480,
-        "y": 340,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "6639e57cfa978e67",
@@ -125,16 +95,134 @@
         "wires": []
     },
     {
+        "id": "8a6dc43ab6cdbf77",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\openurl.py",
+        "virtualenv": "",
+        "continuous": true,
+        "stdInData": true,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e07ce09a7405f829",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\textinput.py",
+        "virtualenv": "",
+        "continuous": true,
+        "stdInData": true,
+        "x": 480,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "f4a09a8fe446a34f",
         "type": "pythonshell in",
         "z": "d73980d7f32c9e96",
         "name": "",
-        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\openapp.py",
+        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\openapp.py",
         "virtualenv": "",
         "continuous": true,
         "stdInData": true,
         "x": 480,
         "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0d74af96e1bda58",
+        "type": "http in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "url": "/wind",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 640,
+        "wires": [
+            [
+                "12fd4894f8303917",
+                "5738f9c0afecb3f3"
+            ]
+        ]
+    },
+    {
+        "id": "12fd4894f8303917",
+        "type": "http response",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5738f9c0afecb3f3",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\wind.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 480,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "414007ac50b8bc26",
+        "type": "http in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "url": "/print",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 820,
+        "wires": [
+            [
+                "e8225157207bde8f",
+                "4da0e6f4719c08e0"
+            ]
+        ]
+    },
+    {
+        "id": "e8225157207bde8f",
+        "type": "http response",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "4da0e6f4719c08e0",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\print.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 480,
+        "y": 800,
         "wires": [
             []
         ]
