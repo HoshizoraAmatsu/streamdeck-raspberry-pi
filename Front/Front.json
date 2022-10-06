@@ -1,0 +1,358 @@
+[
+    {
+        "id": "138f8a70401f40e4",
+        "type": "tab",
+        "label": "Front",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7f30e73f530a325e",
+        "type": "ui_button",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "group": "1a0862d78d9369ae",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Open website",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "website",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "4337344740f6c48f"
+            ]
+        ]
+    },
+    {
+        "id": "73bd4e0c7a1da68f",
+        "type": "ui_text_input",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "label": "website url",
+        "tooltip": "",
+        "group": "1a0862d78d9369ae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "3861d1f28bb20a88"
+            ]
+        ]
+    },
+    {
+        "id": "3861d1f28bb20a88",
+        "type": "change",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "website",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4337344740f6c48f",
+        "type": "http request",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "localhost:1880/openurl",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "227b1fb0dbc8cdea",
+        "type": "ui_button",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "group": "65ace03e40223a32",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Input given text",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "textinput",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "71b3776f37818339"
+            ]
+        ]
+    },
+    {
+        "id": "a565eafe1759de24",
+        "type": "ui_text_input",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "label": "Text input",
+        "tooltip": "",
+        "group": "65ace03e40223a32",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "cdac0b589f9edcaa"
+            ]
+        ]
+    },
+    {
+        "id": "cdac0b589f9edcaa",
+        "type": "change",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "textinput",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71b3776f37818339",
+        "type": "http request",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "localhost:1880/textinput",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd8c1a05a64b4a25",
+        "type": "ui_button",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "group": "ee4b8b7272336170",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Input given text",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "directory",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 680,
+        "wires": [
+            [
+                "9456ec65d6782208"
+            ]
+        ]
+    },
+    {
+        "id": "629ccd885f888ed0",
+        "type": "ui_text_input",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "label": "App directory",
+        "tooltip": "",
+        "group": "ee4b8b7272336170",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "3eda3ae6c37f14b8"
+            ]
+        ]
+    },
+    {
+        "id": "3eda3ae6c37f14b8",
+        "type": "change",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "directory",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9456ec65d6782208",
+        "type": "http request",
+        "z": "138f8a70401f40e4",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "localhost:1880/openapp",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a0862d78d9369ae",
+        "type": "ui_group",
+        "name": "Open website",
+        "tab": "694e9c88ff394f62",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "65ace03e40223a32",
+        "type": "ui_group",
+        "name": "Text Input",
+        "tab": "694e9c88ff394f62",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee4b8b7272336170",
+        "type": "ui_group",
+        "name": "Open App",
+        "tab": "694e9c88ff394f62",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "694e9c88ff394f62",
+        "type": "ui_tab",
+        "name": "streamdeck",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]

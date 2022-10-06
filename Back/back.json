@@ -1,0 +1,142 @@
+[
+    {
+        "id": "d73980d7f32c9e96",
+        "type": "tab",
+        "label": "Back",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "54e21ec6bf77dce4",
+        "type": "http in",
+        "z": "d73980d7f32c9e96",
+        "name": "Open websites",
+        "url": "openurl",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "5e609bf98edc8458",
+                "8a6dc43ab6cdbf77"
+            ]
+        ]
+    },
+    {
+        "id": "5e609bf98edc8458",
+        "type": "http response",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 450,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8a6dc43ab6cdbf77",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\openurl.py",
+        "virtualenv": "",
+        "continuous": true,
+        "stdInData": true,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "068bb8c43f61c5eb",
+        "type": "http in",
+        "z": "d73980d7f32c9e96",
+        "name": "Input a given text",
+        "url": "textinput",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "4c7d7b6154e0af80",
+                "e07ce09a7405f829"
+            ]
+        ]
+    },
+    {
+        "id": "4c7d7b6154e0af80",
+        "type": "http response",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e07ce09a7405f829",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\textinput.py",
+        "virtualenv": "",
+        "continuous": true,
+        "stdInData": true,
+        "x": 480,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6639e57cfa978e67",
+        "type": "http in",
+        "z": "d73980d7f32c9e96",
+        "name": "Open applications",
+        "url": "openapp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "e2eeec7769c5f349",
+                "f4a09a8fe446a34f"
+            ]
+        ]
+    },
+    {
+        "id": "e2eeec7769c5f349",
+        "type": "http response",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f4a09a8fe446a34f",
+        "type": "pythonshell in",
+        "z": "d73980d7f32c9e96",
+        "name": "",
+        "pyfile": "C:\\Users\\guish\\OneDrive\\Documentos\\GitHub\\test\\openapp.py",
+        "virtualenv": "",
+        "continuous": true,
+        "stdInData": true,
+        "x": 480,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    }
+]
