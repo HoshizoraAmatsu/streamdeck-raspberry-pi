@@ -1,230 +1,375 @@
 [
     {
-        "id": "d73980d7f32c9e96",
+        "id": "1deb4fabbd8a83ed",
         "type": "tab",
-        "label": "Back",
+        "label": "Flow 1",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "54e21ec6bf77dce4",
-        "type": "http in",
-        "z": "d73980d7f32c9e96",
-        "name": "Open websites",
-        "url": "openurl",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 220,
-        "y": 220,
+        "id": "d25854f463254281",
+        "type": "pythonshell in",
+        "z": "1deb4fabbd8a83ed",
+        "name": "",
+        "pyfile": "S:\\Users\\19.00671-3\\Documents\\Streamdeck\\openurl.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 640,
+        "y": 140,
         "wires": [
-            [
-                "5e609bf98edc8458",
-                "8a6dc43ab6cdbf77"
-            ]
+            []
         ]
     },
     {
-        "id": "5e609bf98edc8458",
-        "type": "http response",
-        "z": "d73980d7f32c9e96",
+        "id": "595340a7c946a949",
+        "type": "pythonshell in",
+        "z": "1deb4fabbd8a83ed",
         "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 450,
+        "pyfile": "S:\\Users\\19.00671-3\\Documents\\Streamdeck\\textinput.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 620,
         "y": 240,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "068bb8c43f61c5eb",
-        "type": "http in",
-        "z": "d73980d7f32c9e96",
-        "name": "Input a given text",
-        "url": "textinput",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 200,
-        "y": 360,
+        "id": "14e9403099e0aaa0",
+        "type": "pythonshell in",
+        "z": "1deb4fabbd8a83ed",
+        "name": "",
+        "pyfile": "S:\\Users\\19.00671-3\\Documents\\Streamdeck\\openapp.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 640,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31ec3e607a0905d4",
+        "type": "pythonshell in",
+        "z": "1deb4fabbd8a83ed",
+        "name": "",
+        "pyfile": "S:\\Users\\19.00671-3\\Documents\\Streamdeck\\wind.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 640,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61dd2b0d6191561b",
+        "type": "pythonshell in",
+        "z": "1deb4fabbd8a83ed",
+        "name": "",
+        "pyfile": "S:\\Users\\19.00671-3\\Documents\\Streamdeck\\print.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 640,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e2de087b0773043",
+        "type": "rbe",
+        "z": "1deb4fabbd8a83ed",
+        "name": "",
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 410,
+        "y": 400,
         "wires": [
             [
-                "4c7d7b6154e0af80",
-                "e07ce09a7405f829"
+                "31ec3e607a0905d4"
             ]
         ]
     },
     {
-        "id": "4c7d7b6154e0af80",
-        "type": "http response",
-        "z": "d73980d7f32c9e96",
+        "id": "5c3b2b7f3ce13060",
+        "type": "rbe",
+        "z": "1deb4fabbd8a83ed",
         "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 430,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "6639e57cfa978e67",
-        "type": "http in",
-        "z": "d73980d7f32c9e96",
-        "name": "Open applications",
-        "url": "openapp",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 210,
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 410,
         "y": 500,
         "wires": [
             [
-                "e2eeec7769c5f349",
-                "f4a09a8fe446a34f"
+                "61dd2b0d6191561b"
             ]
         ]
     },
     {
-        "id": "e2eeec7769c5f349",
-        "type": "http response",
-        "z": "d73980d7f32c9e96",
+        "id": "5de04e4667aff98a",
+        "type": "rbe",
+        "z": "1deb4fabbd8a83ed",
         "name": "",
-        "statusCode": "",
-        "headers": {},
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
         "x": 430,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "8a6dc43ab6cdbf77",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\openurl.py",
-        "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
-        "x": 500,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e07ce09a7405f829",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\textinput.py",
-        "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
-        "x": 480,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f4a09a8fe446a34f",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\openapp.py",
-        "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
-        "x": 480,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d0d74af96e1bda58",
-        "type": "http in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "url": "/wind",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 640,
+        "y": 140,
         "wires": [
             [
-                "12fd4894f8303917",
-                "5738f9c0afecb3f3"
+                "d25854f463254281"
             ]
         ]
     },
     {
-        "id": "12fd4894f8303917",
-        "type": "http response",
-        "z": "d73980d7f32c9e96",
+        "id": "751ac3cf5ee51f89",
+        "type": "rbe",
+        "z": "1deb4fabbd8a83ed",
         "name": "",
-        "statusCode": "",
-        "headers": {},
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
         "x": 430,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "5738f9c0afecb3f3",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\wind.py",
-        "virtualenv": "",
-        "continuous": false,
-        "stdInData": false,
-        "x": 480,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "414007ac50b8bc26",
-        "type": "http in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "url": "/print",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 200,
-        "y": 820,
+        "y": 240,
         "wires": [
             [
-                "e8225157207bde8f",
-                "4da0e6f4719c08e0"
+                "595340a7c946a949"
             ]
         ]
     },
     {
-        "id": "e8225157207bde8f",
-        "type": "http response",
-        "z": "d73980d7f32c9e96",
+        "id": "679d33e33f273285",
+        "type": "rbe",
+        "z": "1deb4fabbd8a83ed",
         "name": "",
-        "statusCode": "",
-        "headers": {},
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
         "x": 430,
-        "y": 860,
-        "wires": []
+        "y": 320,
+        "wires": [
+            [
+                "14e9403099e0aaa0"
+            ]
+        ]
     },
     {
-        "id": "4da0e6f4719c08e0",
-        "type": "pythonshell in",
-        "z": "d73980d7f32c9e96",
-        "name": "",
-        "pyfile": "S:\\Users\\18.00906-9.IMT-NI.000\\Documents\\Streamdeck\\print.py",
-        "virtualenv": "",
-        "continuous": false,
-        "stdInData": false,
-        "x": 480,
-        "y": 800,
+        "id": "ea913e191cf2b222",
+        "type": "ubidots_in",
+        "z": "1deb4fabbd8a83ed",
+        "tier": "business",
+        "name": "Print",
+        "token": "BBFF-tZiuAprzo3JQgMVmpMlOItVodDGYQw",
+        "device_label": "streamdeck",
+        "tls_checkbox_in": true,
+        "custom_topic_checkbox": false,
+        "label_variable_1": "botao_print",
+        "label_variable_2": "",
+        "label_variable_3": "",
+        "label_variable_4": "",
+        "label_variable_5": "",
+        "label_variable_6": "",
+        "label_variable_7": "",
+        "label_variable_8": "",
+        "label_variable_9": "",
+        "label_variable_10": "",
+        "checkbox_variable_1_last_value": true,
+        "checkbox_variable_2_last_value": true,
+        "checkbox_variable_3_last_value": true,
+        "checkbox_variable_4_last_value": true,
+        "checkbox_variable_5_last_value": true,
+        "checkbox_variable_6_last_value": true,
+        "checkbox_variable_7_last_value": true,
+        "checkbox_variable_8_last_value": true,
+        "checkbox_variable_9_last_value": true,
+        "checkbox_variable_10_last_value": true,
+        "x": 230,
+        "y": 500,
         "wires": [
-            []
+            [
+                "5c3b2b7f3ce13060"
+            ]
+        ]
+    },
+    {
+        "id": "27a1f5cfada11bd9",
+        "type": "ubidots_in",
+        "z": "1deb4fabbd8a83ed",
+        "tier": "business",
+        "name": "Win+d",
+        "token": "BBFF-tZiuAprzo3JQgMVmpMlOItVodDGYQw",
+        "device_label": "streamdeck",
+        "tls_checkbox_in": true,
+        "custom_topic_checkbox": false,
+        "label_variable_1": "botao_wind",
+        "label_variable_2": "",
+        "label_variable_3": "",
+        "label_variable_4": "",
+        "label_variable_5": "",
+        "label_variable_6": "",
+        "label_variable_7": "",
+        "label_variable_8": "",
+        "label_variable_9": "",
+        "label_variable_10": "",
+        "checkbox_variable_1_last_value": true,
+        "checkbox_variable_2_last_value": true,
+        "checkbox_variable_3_last_value": true,
+        "checkbox_variable_4_last_value": true,
+        "checkbox_variable_5_last_value": true,
+        "checkbox_variable_6_last_value": true,
+        "checkbox_variable_7_last_value": true,
+        "checkbox_variable_8_last_value": true,
+        "checkbox_variable_9_last_value": true,
+        "checkbox_variable_10_last_value": true,
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "8e2de087b0773043"
+            ]
+        ]
+    },
+    {
+        "id": "1167ab1214616ebb",
+        "type": "ubidots_in",
+        "z": "1deb4fabbd8a83ed",
+        "tier": "business",
+        "name": "Open google",
+        "token": "BBFF-tZiuAprzo3JQgMVmpMlOItVodDGYQw",
+        "device_label": "streamdeck",
+        "tls_checkbox_in": true,
+        "custom_topic_checkbox": false,
+        "label_variable_1": "url",
+        "label_variable_2": "",
+        "label_variable_3": "",
+        "label_variable_4": "",
+        "label_variable_5": "",
+        "label_variable_6": "",
+        "label_variable_7": "",
+        "label_variable_8": "",
+        "label_variable_9": "",
+        "label_variable_10": "",
+        "checkbox_variable_1_last_value": true,
+        "checkbox_variable_2_last_value": true,
+        "checkbox_variable_3_last_value": true,
+        "checkbox_variable_4_last_value": true,
+        "checkbox_variable_5_last_value": true,
+        "checkbox_variable_6_last_value": true,
+        "checkbox_variable_7_last_value": true,
+        "checkbox_variable_8_last_value": true,
+        "checkbox_variable_9_last_value": true,
+        "checkbox_variable_10_last_value": true,
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "5de04e4667aff98a"
+            ]
+        ]
+    },
+    {
+        "id": "ac6a5cddfc8fa5ac",
+        "type": "ubidots_in",
+        "z": "1deb4fabbd8a83ed",
+        "tier": "business",
+        "name": "Input text",
+        "token": "BBFF-tZiuAprzo3JQgMVmpMlOItVodDGYQw",
+        "device_label": "streamdeck",
+        "tls_checkbox_in": true,
+        "custom_topic_checkbox": false,
+        "label_variable_1": "text",
+        "label_variable_2": "",
+        "label_variable_3": "",
+        "label_variable_4": "",
+        "label_variable_5": "",
+        "label_variable_6": "",
+        "label_variable_7": "",
+        "label_variable_8": "",
+        "label_variable_9": "",
+        "label_variable_10": "",
+        "checkbox_variable_1_last_value": true,
+        "checkbox_variable_2_last_value": true,
+        "checkbox_variable_3_last_value": true,
+        "checkbox_variable_4_last_value": true,
+        "checkbox_variable_5_last_value": true,
+        "checkbox_variable_6_last_value": true,
+        "checkbox_variable_7_last_value": true,
+        "checkbox_variable_8_last_value": true,
+        "checkbox_variable_9_last_value": true,
+        "checkbox_variable_10_last_value": true,
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "751ac3cf5ee51f89"
+            ]
+        ]
+    },
+    {
+        "id": "69652963be614744",
+        "type": "ubidots_in",
+        "z": "1deb4fabbd8a83ed",
+        "tier": "business",
+        "name": "Open Firefox",
+        "token": "BBFF-tZiuAprzo3JQgMVmpMlOItVodDGYQw",
+        "device_label": "streamdeck",
+        "tls_checkbox_in": true,
+        "custom_topic_checkbox": false,
+        "label_variable_1": "appdirectory",
+        "label_variable_2": "",
+        "label_variable_3": "",
+        "label_variable_4": "",
+        "label_variable_5": "",
+        "label_variable_6": "",
+        "label_variable_7": "",
+        "label_variable_8": "",
+        "label_variable_9": "",
+        "label_variable_10": "",
+        "checkbox_variable_1_last_value": true,
+        "checkbox_variable_2_last_value": true,
+        "checkbox_variable_3_last_value": true,
+        "checkbox_variable_4_last_value": true,
+        "checkbox_variable_5_last_value": true,
+        "checkbox_variable_6_last_value": true,
+        "checkbox_variable_7_last_value": true,
+        "checkbox_variable_8_last_value": true,
+        "checkbox_variable_9_last_value": true,
+        "checkbox_variable_10_last_value": true,
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "679d33e33f273285"
+            ]
         ]
     }
 ]
